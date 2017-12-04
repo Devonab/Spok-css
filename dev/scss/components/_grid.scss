@@ -1,0 +1,10 @@
+.row {
+  @include flexbox;
+}
+
+@for $i from 1 through $g-nb-columns {
+  .col-#{$i} {
+    $multiplier: $i / $g-nb-columns;
+    width: calc(100% * #{$multiplier} - #{$g-columns-gutter} * (1 - #{$multiplier}));
+  }
+}

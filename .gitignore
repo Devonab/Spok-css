@@ -21,6 +21,8 @@
 .zip
 *.gem
 *.rbc
+*.rb
+*.sass-cache
 
 # Logs and databases #
 ######################
